@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    img {
+      max-width: 50%;
+      height: auto;
+      filter: invert(100%);
+      display: block;
+      margin-top: -1.5in; /* Moves the image up by 1.5 inches without affecting the text */
+    	 opacity: 0.6;
+    }
+    .caption-container {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .caption {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 1.5in; /* Moves the text down by 1.5 inches (image's margin-top is already -1.5in)*/
+	margin-left: 20px;
+    }
+    .caption p {
+      font-family: sans-serif;
+      font-size: 2.0rem;
+      color: #fff; /* Ensures text is white */
+      margin: 0; /* Removes any default margins around the p tag */
+	 opacity: 0.8;
+	letter-spacing: 0.1em; 
+    }
+  </style>
+</head>
+<body>
+  <img src="ferocious-owl.jpeg" alt="Coming Soon">
+  <div class="caption-container">
+    <div class="caption">
+      <p>Ferocious Owl</p>
+    </div>
+  </div>
+</body>
+</html>
